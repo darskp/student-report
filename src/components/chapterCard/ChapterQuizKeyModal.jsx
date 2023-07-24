@@ -24,7 +24,7 @@ const ChapterQuizKeyModal = ({ open, onClose }) => {
 
     const handleQuestionClick = (id) => {
         if (loading) return;
-        setLoading(false);
+        setLoading(true);
         setTimeout(() => {
             setCurrentQuestionIndex(id);
             setLoading(false);
